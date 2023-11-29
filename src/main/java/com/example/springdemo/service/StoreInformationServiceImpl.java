@@ -6,8 +6,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.example.springdemo.entity.StoreInformation;
 import com.example.springdemo.repository.StoreInformationRepository;
@@ -20,7 +18,7 @@ public class StoreInformationServiceImpl implements StoreInformationService {
 
     
     private StoreInformationRepository storeInformationRepository;
-    private final Logger logger = LoggerFactory.getLogger(StoreInformationServiceImpl.class);
+   
     
     // Constructor injection for the repository
     public StoreInformationServiceImpl(StoreInformationRepository storeInformationRepository) {
@@ -29,7 +27,7 @@ public class StoreInformationServiceImpl implements StoreInformationService {
 
     @Override
     public List<StoreInformation> getAllStores() {
-    	logger.info("Getting all stores");
+    	
         return (List<StoreInformation>) storeInformationRepository.findAll();
     }
 
