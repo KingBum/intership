@@ -1,0 +1,45 @@
+{
+    "name" : "Mww 2nd",
+    "description" : "This is my second meo with NFT",
+    "image" : "https://plum-wooden-rattlesnake-570.mypinata.cloud/ipfs/QmY7vb58AJdTPzkuJsDvA2Bbp82spZ1zQzauZ91CmcbhRY/2.jpg",
+    "attributes" : [
+        {
+            "trait_type" : "Cute",
+            "value" : 5,
+            "max_value" : 10
+        },
+        {
+            "trait_type" : "Frendly",
+            "value" : 9,
+            "max_value" : 10
+        },
+        {
+            "trait_type" : "Reproduction",
+            "value" : 7,
+            "max_value" : 10
+        },
+        {
+            "display_type" : "boost_number",
+            "trait_type" : "Speed",
+            "value" : 2
+        },
+        {
+            "display_type" : "boost_percentage",
+            "trait_type" : "Control",
+            "value" : 30
+        },
+        {
+            "display_type" : "number",
+            "trait_type" : "Generation",
+            "value" : 1
+        },
+        { 
+            "trait_type" : "Original",
+            "value" : "True"
+        },
+        {
+            "trait_type" : "Upgradable",
+            "value" : "False"
+        }
+    ]
+}
