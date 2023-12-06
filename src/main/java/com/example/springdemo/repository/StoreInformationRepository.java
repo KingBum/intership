@@ -11,9 +11,5 @@ public interface StoreInformationRepository extends JpaRepository<StoreInformati
 
 	List<StoreInformation> findByNameContainingIgnoreCase(String name);
     // Additional custom queries can be added here
-	
-	List<StoreInformation> findAllByOrderByNameAsc();
-    
-    List<StoreInformation> findAllByOrderByNameDesc();
 
 }

@@ -4,6 +4,7 @@ package com.example.springdemo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,7 +28,6 @@ public class StoreRestController {
     
     @GetMapping("/")
     public List<StoreInformation> getAllStores() {
-    	
         return (List<StoreInformation>) storeInformationRepository.findAll();
     }
 
@@ -91,9 +91,9 @@ public class StoreRestController {
         List<StoreInformation> sortedStores;
 
         if ("desc".equalsIgnoreCase(direction)) {
-            sortedStores = storeInformationRepository.findAllByOrderByNameDesc();
+            sortedStores = storeInformationRepository.findAll(Sort.by(Sort.Direction.DESC));
         } else {
-            sortedStores = storeInformationRepository.findAllByOrderByNameAsc();
+            sortedStores = storeInformationRepository.findAll(Sort.by(Sort.Direction.ASC));
         }
 
         return ResponseEntity.ok(sortedStores);
