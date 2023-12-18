@@ -1,0 +1,1 @@
+Document for Java Core : https://bapjsc-my.sharepoint.com/:w:/r/personal/loint_bap_jp/_layouts/15/Doc.aspx?sourcedoc=%7BCEA52C3E-858F-4B9D-913A-A628DEBCC752%7D&file=JavaCore.docx&action=default&mobileredirect=true
