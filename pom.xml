@@ -84,6 +84,14 @@
 			<artifactId>opencsv</artifactId>
 			<version>5.9</version>
 		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -93,7 +101,7 @@
 				<artifactId>web3j-maven-plugin</artifactId>
 				<version>4.10.3</version>
 				<configuration>
-					<sourceDestination>src/main/java/generated</sourceDestination>
+					<sourceDestination>src/main/java/com/spring/finaldemo/</sourceDestination>
 					<nativeJavaType>true</nativeJavaType>
 					<outputFormat>java,bin,abi</outputFormat>
 					<soliditySourceFiles>
@@ -103,8 +111,8 @@
 						</includes>
 					</soliditySourceFiles>
 					<outputDirectory>
-						<java>src/main/java/example/springSecurity/contract</java>
-						<abi>src/main/java/example/springSecurity/abi</abi>
+						<java>src/main/java/com/spring/finaldemo/contract</java>
+						<abi>src/main/java/com/spring/finaldemo/abi</abi>
 					</outputDirectory>
 					<pathPrefixes>
 						<pathPrefix>dep=../dependencies</pathPrefix>
@@ -117,7 +125,7 @@
 				<configuration>
 					<excludes>
 						<exclude>
-							<groupId>org.projectlombok</groupId>
+							<groupId>org.project-lombok</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
